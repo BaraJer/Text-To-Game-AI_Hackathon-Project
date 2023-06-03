@@ -1,3 +1,7 @@
+An End-To-End text to game generator, it handles generating a whole well plotted story which is exclusivly inspired by the given prompt, then it add an interavtive NPCs that will cause the player to proceed with the story and he beats the game, then it generates a relevant map with relevant theme to the story. 
+
+next step: to add challenges and quests though out the game that the player must finish in-order to beat the game.
+
 Demo:
 
 Promopt: Rihana tries to conquer the galaxy.
