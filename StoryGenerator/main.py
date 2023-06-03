@@ -7,7 +7,7 @@ import openai
 
 import prompts
 
-openai.api_key = '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'
+openai.api_key = #enter openai api key
 
 
 
