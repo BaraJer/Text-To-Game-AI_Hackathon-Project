@@ -1,12 +1,6 @@
-# Hackathon2023
-HUJI Hackathon 2023
+Demo:
 
+Promopt: Rihana tries to conquer the galaxy.
 
-Next versions:
-Character appearance variabilities
-Player appearance variabilities
-multiple characters in room / Rooms withot characters
-Room decorations
-Dalle textures
-In game objectives
-Transitions in center (not on boundaries)
+https://github.com/BaraJer/Text-To-Game-AI_Hackathon-Project/assets/42722496/a3b05ad8-23b3-485e-a22f-d6cfa734669c
+
