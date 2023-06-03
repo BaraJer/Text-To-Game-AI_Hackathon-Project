@@ -1,0 +1,49 @@
+[gd_scene load_steps=7 format=3 uid="uid://djxxf8ro300a4"]
+
+[ext_resource type="Script" path="res://scripts/npc.gd" id="1_uaofp"]
+[ext_resource type="Texture2D" uid="uid://bil84vrlvdx5m" path="res://assets/sprites/players/Modern_Exteriors_Characters_Scout_16x16_2.png" id="2_1drp1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_od23b"]
+size = Vector2(16, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g2cre"]
+atlas = ExtResource("2_1drp1")
+region = Rect2(48, 0, 16, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_y0pj8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g2cre")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6ogbl"]
+radius = 9.0
+
+[node name="npc" type="CharacterBody2D" groups=["npc"]]
+script = ExtResource("1_uaofp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(-1, 4)
+shape = SubResource("RectangleShape2D_od23b")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1, 0)
+sprite_frames = SubResource("SpriteFrames_y0pj8")
+animation = &"Idle"
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(-1, 5)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+visible = false
+position = Vector2(0, 11)
+shape = SubResource("CircleShape2D_6ogbl")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dwnsd7kcifxux"]
+
+[ext_resource type="Script" path="res://scripts/Transition.gd" id="1_8l5y3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_axfqn"]
+size = Vector2(224, 32)
+
+[node name="Transition" type="Area2D" groups=["transitions"]]
+script = ExtResource("1_8l5y3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_axfqn")
+
+[node name="SpawnPoint" type="Node2D" parent="."]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

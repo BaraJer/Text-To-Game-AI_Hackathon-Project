@@ -1,0 +1,100 @@
+[{
+		"farm": [
+			"up"
+		]
+	},
+	{
+		"house_entrance": [
+			"up",
+			"left"
+		]
+	},
+	{
+		"house_first_room": [
+			"down",
+			"right"
+		]
+	},
+	{
+		"house_second_room": [
+			"left"
+		]
+	},
+	{
+		"passage_left_right": [
+			"left",
+			"right"
+		]
+	},
+	{
+		"road_to_house_entrance": [
+			"left",
+			"down",
+			"right"
+		]
+	},
+	{
+		"4-way-intersection": [
+			"up",
+			"left",
+			"down",
+			"right"
+		]
+	},
+	{
+		"road_from_right": [
+			"right"
+		]
+	},
+	{
+		"road_from_down": [
+			"down"
+		]
+	},
+	{
+		"passage_up_down": [
+			"up",
+			"down"
+		]
+	},
+	{
+		"dead_end_from_left": [
+			"left"
+		]
+	},
+	{
+		"dead_end_from_right": [
+			"right"
+		]
+	},
+	{
+		"passage_up_right": [
+			"up",
+			"right"
+		]
+	},
+	{
+		"passage_up_left": [
+			"up",
+			"left"
+		]
+	},
+	{
+		"passage_down_left": [
+			"down",
+			"left"
+		]
+	},
+	{
+		"passage_down_right": [
+			"down",
+			"right"
+		]
+	},
+	{
+		"bridges_up_down": [
+			"up",
+			"down"
+		]
+	}
+]
